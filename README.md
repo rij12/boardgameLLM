@@ -25,3 +25,11 @@ make run q="YOUR QUERY"
 1. Load: First we need to load our data. This is done with Document Loaders.
 2. Split: Text splitters break large Documents into smaller chunks. This is useful both for indexing data and passing it into a model, as large chunks are harder to search over and won't fit in a model's finite context window.
 3. Store: We need somewhere to store and index our splits, so that they can be searched over later. This is often done using a VectorStore and Embeddings model.
+
+## Model Card 
+
+For: 
+* Embbeding function
+* LLM model 
+
+https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md 
