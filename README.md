@@ -1,6 +1,6 @@
 # LangChain 
 
-Ask questions about the boardgames 
+Ask questions about board games such as monopoly.
 
 
 ![alt text](https://python.langchain.com/assets/images/rag_indexing-8160f90a90a33253d0154659cf7d453f.png)
