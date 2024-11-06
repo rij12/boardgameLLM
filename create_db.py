@@ -14,7 +14,6 @@ DATA_PATH = "data"
 
 
 def main():
-
     parser = argparse.ArgumentParser()
     parser.add_argument("--reset", action="store_true", help="Reset the database.")
     args = parser.parse_args()
