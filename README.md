@@ -2,6 +2,22 @@
 
 Ask questions about board games such as monopoly.
 
+## Build 
+
+1. Setups Python3 venv
+2. Install requirements.txt to venv
+3. Creates ChromaDB 
+
+```bash
+make init
+```
+
+## RUN 
+
+```bash
+make run q="YOUR QUERY"
+```
+
 
 ![alt text](https://python.langchain.com/assets/images/rag_indexing-8160f90a90a33253d0154659cf7d453f.png)
 
