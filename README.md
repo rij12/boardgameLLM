@@ -12,12 +12,14 @@ Ask questions about board games such as monopoly.
 make init
 ```
 
-## RUN 
+## Run
 
 ```bash
 make run q="YOUR QUERY"
 ```
 
+
+## Design 
 
 ![alt text](https://python.langchain.com/assets/images/rag_indexing-8160f90a90a33253d0154659cf7d453f.png)
 

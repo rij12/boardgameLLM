@@ -7,6 +7,7 @@ from embedding_function import get_embedding_function
 
 CHROMA_PATH = "chroma"
 
+
 PROMPT_TEMPLATE = """
 Answer the question based only on the following context:
 
@@ -33,10 +34,11 @@ def query_rag(query_text: str) -> str:
     db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embedding_function)
 
     # Search the DB.
-    results = db.similarity_search_with_score(query_text, k=10)
+    results = db.similarity_search_with_score(query_text, k=5)
 
     context_text = "\n\n---\n\n".join([doc.page_content for doc, _score in results])
     prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
+    print(f"\n ${context_text} \n")
     prompt = prompt_template.format(context=context_text, question=query_text)
     # print(prompt)
 
